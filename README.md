@@ -4,7 +4,7 @@ face library
 INSTALL 
 -------------------------------------------
 
-1. sudo apt-get install -y php mysql php-mbstring php-xml
+1. sudo apt-get install -y php mysql php-mbstring php-xml php-pdo php-mysqli
 
 2. 需要apache或者nginx
 
@@ -21,4 +21,11 @@ INSTALL
       <li>最后将项目代码拷贝到生成的项目的对应的目录</li>
       </ul>
 3. 配置nginx或者apache
+
+4. 问题
+   <ul>
+   <li>如果访问php文件，是404，则查看php-fpm是否启动，手动执行php-fpm</li>
+   <li>laravel可以开启debug模式，对应的文件是/config/app.php</li>
+   <li>记得在项目目录下要有.env文件，里面会配置key</li>
+   </ul>
 
